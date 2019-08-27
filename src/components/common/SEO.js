@@ -2,11 +2,11 @@ import React from 'react';
 import Helmet from 'react-helmet';
 
 const SEO_DATA = {
-  description: 'An absurd gatsby starter',
-  title: 'Absurd',
-  url: '',
-  author: 'ajayns',
-  keywords: ['gatsby', 'site', 'absurd'],
+  description: 'Track and optimize your supply chain using Blockchain and AI',
+  title: 'Devoleum',
+  url: 'https://www.devoleum.com/',
+  author: 'Lorenzo Zaccagnini Elisa Romondia',
+  keywords: ['devoleum', 'blockchain', 'supply chain', 'ethereum', 'food', 'artificial intelligence'],
   twitter: {
     id: '@ajayns08',
     img: '',

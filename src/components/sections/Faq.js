@@ -7,58 +7,59 @@ import ExternalLink from '@common/ExternalLink';
 
 const FAQS = [
   {
-    title: 'What tech does Gatsby use?',
+    title: 'What tech does Devoleum use?',
     content: () => (
       <>
-        Enjoy the power of the latest web technologies – React.js , Webpack ,
-        modern JavaScript and CSS and more — all set up and waiting for you to
-        start building
+        All the tech behind Devoleum is open source, Ethereum blockchain, Tensor Flow,
+        PySyft, Truffle, Zokrates, React, Electron etc...
       </>
     ),
   },
   {
-    title: 'Where can you source data from?',
+    title: 'Why Devoleum is not yet commercialized?',
     content: () => (
       <>
-        Gatsby’s rich data plugin ecosystem lets you build sites with the data
-        you want — from one or many sources: Pull data from headless CMSs, SaaS
-        services, APIs, databases, your file system, and more directly into your
-        pages using GraphQL.
+        We are improving our AI models, we're searching
+        companies that uses precision farming in order to gather enough data
+        to develop accurate AI models.
       </>
     ),
   },
   {
-    title: 'How do I scale Gatsby sites?',
+    title: 'Deveolum is a software or hardware solution?',
     content: () => (
       <>
-        Gatsby.js is Internet Scale. Forget complicated deploys with databases
-        and servers and their expensive, time-consuming setup costs,
-        maintenance, and scaling fears. Gatsby.js builds your site as “static”
-        files which can be deployed easily on dozens of services.
+        Devoleum is a digital solution, we manage the data provided by the users,
+        we do not generate data or provide hardware tools.
       </>
     ),
   },
   {
-    title: 'How does do I future-proof my website?',
+    title: 'Do you have a white paper?',
     content: () => (
       <>
-        Do not build a website with last decade’s tech. The future of the web is
-        mobile, JavaScript and APIs—the{` `}
-        <ExternalLink href="https://jamstack.org/">JAMstack</ExternalLink>.
-        Every website is a web app and every web app is a website. Gatsby.js is
-        the universal JavaScript framework you’ve been waiting for.
+      No, we are busy working on the real project and is in constant evolution,
+      we do not have time to waste on a fake paper, we suggest to read <ExternalLink href="https://medium.com/loom-network/loom-network-wheres-your-whitepaper-5c5c9075af72">
+        this article</ExternalLink>
       </>
     ),
   },
   {
-    title: 'What exactly does Gatsby build?',
+    title: 'Do you plan an ICO?',
     content: () => (
       <>
-        Gatsby.js is a static PWA (Progressive Web App) generator. You get code
-        and data splitting out-of-the-box. Gatsby loads only the critical HTML,
-        CSS, data, and JavaScript so your site loads as fast as possible. Once
-        loaded, Gatsby prefetches resources for other pages so clicking around
-        the site feels incredibly fast.
+        No, we do not beg for money or scam other people,
+        if you want to invest in Devoleum you are welcome, <ExternalLink href="https://lorenzozaccagnini360607.typeform.com/to/ie22gw">
+          contact us</ExternalLink> and do not forget to link your investments portfolio.
+      </>
+    ),
+  },
+  {
+    title: 'I want to try Devoleum!',
+    content: () => (
+      <>
+        You can try our simulation for free <ExternalLink href="https://simulation.devoleum.com/">
+        here</ExternalLink>, build your supply chain and please give us a feedback :)
       </>
     ),
   },

@@ -11,7 +11,7 @@ const About = () => (
       query {
         art_fast: file(
           sourceInstanceName: { eq: "art" }
-          name: { eq: "fast" }
+          name: { eq: "fake" }
         ) {
           childImageSharp {
             fluid(maxWidth: 760) {
@@ -20,9 +20,9 @@ const About = () => (
           }
         }
 
-        art_learn: file(
+        art_transparency: file(
           sourceInstanceName: { eq: "art" }
-          name: { eq: "learn_yourself" }
+          name: { eq: "trans" }
         ) {
           childImageSharp {
             fluid(maxWidth: 760) {
@@ -31,9 +31,9 @@ const About = () => (
           }
         }
 
-        art_ideas: file(
+        art_privacy: file(
           sourceInstanceName: { eq: "art" }
-          name: { eq: "ideas" }
+          name: { eq: "safe" }
         ) {
           childImageSharp {
             fluid(maxWidth: 760) {
@@ -46,14 +46,56 @@ const About = () => (
     render={data => (
       <Section id="about">
         <Container>
+          <Grid inverse>
+            <Art>
+              <Img fluid={data.art_transparency.childImageSharp.fluid} />
+            </Art>
+            <div>
+              <h2>Transparency</h2>
+              <p>
+                Devoleum stores the supply chain steps in the Ethereum blockchain, a tamper proof system
+						    open and transparent. The data inside the blockchain becomes immutable, impossible to manipulate.
+                Every interaction with the data is recorded in public transactions. King Joffrey knows why transparency is important in food supply chains
+              </p>
+            </div>
+          </Grid>
           <Grid>
             <div>
-              <h2>Speed past the competition</h2>
+              <h2>Privacy</h2>
               <p>
-                Gatsby.js builds the fastest possible website. Instead of
-                waiting to generate pages when requested, pre-build pages and
-                lift them into a global cloud of servers — ready to be delivered
-                instantly to your users wherever they are.
+                Our integration of zk-SNARKs (Zokrates) allows the tokenization of a physical asset without revealing sensitive data on the blockchain.
+            		We are using Federated Learning to train
+                 our AI models in combination with zk-SNARKs.
+                <br />
+                <strong>Devoleum offers the possibility
+                  to use a fully decentralized architecture
+                   without requiring any sensitive data from the users</strong>,
+            		ensuring full compliance with the GDPR.
+              </p>
+            </div>
+            <Art>
+              <Img fluid={data.art_privacy.childImageSharp.fluid} />
+            </Art>
+          </Grid>
+          <Grid inverse>
+            <Art>
+              <Img fluid={data.art_fast.childImageSharp.fluid} />
+            </Art>
+            <div>
+              <h2>Correctness</h2>
+              <p>
+                We are building AI models that will inspect data correctness before being pushed immutably inside Ethereum.
+            		Using AI we can provide accurate real time prediction with the blockchain tamper proof data. We are actively
+            		open to collaboration with companies that gather data using precision farming, feel free to contact us.
+              </p>
+            </div>
+          </Grid>
+          <Grid>
+            <div>
+              <h2>Interoperability</h2>
+              <p>
+                Devoleum smart contracts can be triggered by events external to Ethereum blockchain, thanks to oracles.
+          			IoT devices and Open Bank APIs can be used in combination with Devoleum to automize the supply chain workflow, saving time and money.
               </p>
             </div>
             <Art>
@@ -62,31 +104,15 @@ const About = () => (
           </Grid>
           <Grid inverse>
             <Art>
-              <Img fluid={data.art_learn.childImageSharp.fluid} />
+              <Img fluid={data.art_fast.childImageSharp.fluid} />
             </Art>
             <div>
-              <h2>Nothing new to learn here</h2>
+              <h2>Scalability</h2>
               <p>
-                Enjoy the power of the latest web technologies – React.js ,
-                Webpack , modern JavaScript and CSS and more — all set up and
-                waiting for you to start building.
+                Devoleum smart contracts can be used in combination with IPFS and traditional databases,
+            		allowing great scalability and lower costs.
               </p>
             </div>
-          </Grid>
-          <Grid>
-            <div>
-              <h2>Grow and build your ideas</h2>
-              <p>
-                Waste no more time on tooling and performance. Focus on the the
-                site you want to build and nothing more.
-                <br />
-                <br />
-                Gatsby is fast in every way that matters.
-              </p>
-            </div>
-            <Art>
-              <Img fluid={data.art_ideas.childImageSharp.fluid} />
-            </Art>
           </Grid>
         </Container>
       </Section>

@@ -7,6 +7,15 @@ const normalize = `
 const GlobalStyles = createGlobalStyle`
   ${normalize};
 
+  @import url('https://fonts.googleapis.com/css?family=Lora&display=swap');
+  @import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+  @import "react-alice-carousel/lib/alice-carousel.css";
+
+  .press_gallery {
+    width: 400px;
+    margin: auto;
+  }
+
   body {
     font-family: ${props => props.theme.font.secondary};
   }
@@ -61,6 +70,10 @@ const GlobalStyles = createGlobalStyle`
     outline: none;
     padding: 0;
     cursor: pointer;
+  }
+
+  .pcolor{
+    color: darkslategray;
   }
 
   a {

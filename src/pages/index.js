@@ -9,11 +9,16 @@ import Brands from '@sections/Brands';
 import Team from '@sections/Team';
 import Faq from '@sections/Faq';
 import Footer from '@sections/Footer';
+import Gallery from '@sections/Gallery';
+import Problem from '@sections/Problem';
+import Solution from '@sections/Solution';
 
 const IndexPage = () => (
   <Layout>
     <Navbar />
     <Header />
+    <Problem />
+    <Solution />
     <About />
     <Brands />
     <Team />

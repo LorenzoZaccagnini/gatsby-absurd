@@ -39,6 +39,7 @@
     "clean": "rm -rf .cache && rm -rf public"
   },
   "devDependencies": {
-    "prettier": "^1.15.2"
+    "prettier": "^1.15.2",
+    "react-alice-carousel": "^1.15.2"
   }
 }
