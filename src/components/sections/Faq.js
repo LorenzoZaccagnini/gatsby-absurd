@@ -19,7 +19,7 @@ const FAQS = [
     title: 'How Devoleum integrates Smart Tags?',
     content: () => (
       <>
-        Take a look at <ExternalLink href="https://simulation.devoleum.com/"> this video
+        Take a look at <ExternalLink href="https://www.youtube.com/watch?v=LgfpouDZ4A0"> this video
         here</ExternalLink>, using different kinds of Oracles Devoleum can integrate even more
         advanced smart tags.
       </>
