@@ -1,5 +1,6 @@
 import React from 'react';
 import Helmet from 'react-helmet';
+import Logo from '@static/logo.png';
 
 const SEO_DATA = {
   description: 'Track and optimize your supply chain using Blockchain and AI',
@@ -8,12 +9,12 @@ const SEO_DATA = {
   author: 'Lorenzo Zaccagnini Elisa Romondia',
   keywords: ['devoleum', 'blockchain', 'supply chain', 'ethereum', 'food', 'artificial intelligence'],
   twitter: {
-    id: '@ajayns08',
-    img: '',
+    id: '@LorenzoZcg',
+    img: Logo,
   },
   facebook: {
-    id: '',
-    img: '',
+    id: 'romondiaelisa',
+    img: Logo,
   },
 };
 
