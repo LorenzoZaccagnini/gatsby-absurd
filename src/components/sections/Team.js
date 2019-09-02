@@ -2,21 +2,39 @@ import React from 'react';
 import styled from 'styled-components';
 import { StaticQuery, graphql } from 'gatsby';
 import Img from 'gatsby-image';
+import ExternalLink from '@common/ExternalLink';
 
 import { Section, Container } from '@components/global';
 
 const TEAM = [
   {
     name: 'Elisa Romondia',
-    image: 'lisa.jpg',
-    role: 'Art Director',
+    image: 'elisa.jpg',
+    role: 'Co-founder',
+    link: 'https://www.linkedin.com/in/elisa-romondia/',
+    desc: `
+          Data Analyst, AI and  Blockchain developer in the Forbes list
+          "60 Women-Led Startups That Are Shaking Up Tech Across The Globe"
+          with the project Devoleum. Italian InspiringFifty 2018.
+    `
   },
   {
     name: 'Lorenzo Zaccagnini',
-    image: 'martin.jpg',
-    role: 'Backend Engineer',
+    image: 'lorenzo.jpg',
+    link: 'https://www.linkedin.com/in/lorenzo-zaccagnini/',
+    role: 'Co-founder',
+    desc: `
+        Blockchain and AI developer. Winner of the TIM #Wcap prize at
+        the first Italian official hackathon, Digithon 2016. Blockchain
+        mentor for the Silicon Valley top company Udacity.
+    `
   },
 ];
+
+const imgStyle = {
+  maxWidth: '200px'
+};
+
 
 const Team = () => (
   <StaticQuery
@@ -34,99 +52,82 @@ const Team = () => (
             }
           }
         }
-        art_team: file(
-          sourceInstanceName: { eq: "art" }
-          name: { eq: "team_work" }
-        ) {
-          childImageSharp {
-            fluid(maxWidth: 1600) {
-              ...GatsbyImageSharpFluid_withWebp_tracedSVG
-            }
-          }
-        }
       }
     `}
+
+
+
     render={data => (
       <Section id="team" accent="secondary">
         <Container style={{ position: 'relative' }}>
-          <h1>The Team</h1>
-          <TeamGrid>
-            {TEAM.map(({ name, image, role }) => {
+          <h1>Team</h1>
+            {TEAM.map(({ name, image, role, link, desc }) => {
               const img = data.allFile.edges.find(
                 ({ node }) => node.relativePath === image
               ).node;
 
               return (
-                <div>
-                  <Img fluid={img.childImageSharp.fluid} alt={name} />
+                <Grid>
+                  <Art>
+                      <Img fluid={img.childImageSharp.fluid} alt={name} />
+                    <StyledExternalLink href={link} align="left">
+                        <Subtitle>Linkedin profile</Subtitle>
+                    </StyledExternalLink>
+                  </Art>
+
+                <div align="left">
                   <Title>{name}</Title>
                   <Subtitle>{role}</Subtitle>
+                  <Subtitle >{desc}</Subtitle>
+
                 </div>
+              </Grid>
+
               );
             })}
-          </TeamGrid>
-          <Art>
-            <Img fluid={data.art_team.childImageSharp.fluid} />
-          </Art>
-          <ArtMobile>
-            <Img fluid={data.art_team.childImageSharp.fluid} />
-          </ArtMobile>
         </Container>
       </Section>
     )}
   />
 );
 
-const TeamGrid = styled.div`
-  display: grid;
-  grid-template-columns: repeat(auto-fill, 200px);
-  grid-template-rows: min-content;
-  grid-gap: 50px;
-  justify-content: space-between;
-  width: 60%;
-  margin-top: 72px;
-
-  @media (max-width: ${props => props.theme.screen.lg}) {
-    justify-content: start;
-  }
-
-  @media (max-width: ${props => props.theme.screen.md}) {
-    width: 100%;
-    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
-  }
-
-  @media (max-width: ${props => props.theme.screen.xs}) {
-    grid-gap: 24px;
-  }
-`;
-
 const Art = styled.figure`
-  width: 800px;
-  margin: -80px 0;
-  position: absolute;
-  top: 0;
-  left: 70%;
-
-  @media (max-width: ${props => props.theme.screen.lg}) {
-    top: 20%;
-  }
-
-  @media (max-width: ${props => props.theme.screen.md}) {
-    display: none;
-  }
-`;
-
-const ArtMobile = styled.figure`
-  width: 100%;
   margin: 0;
-  display: none;
-  margin-top: 64px;
-  margin-bottom: -60%;
+  max-width: 280px;
+  width: 100%;
+`;
+
+const Grid = styled.div`
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  grid-gap: 40px;
+  text-align: right;
+  align-items: center;
+  justify-items: center;
+  margin: 24px 0;
+
+  ${props =>
+    props.inverse &&
+    `
+    text-align: left;
+    grid-template-columns: 2fr 3fr;
+  `}
+
+  h2 {
+    margin-bottom: 16px;
+  }
 
   @media (max-width: ${props => props.theme.screen.md}) {
-    display: block;
+    grid-template-columns: 1fr;
+    text-align: left;
+    margin-bottom: 96px;
+
+    &:last-child {
+      margin-bottom: 24px;
+    }
   }
 `;
+
 
 const Title = styled.p`
   margin-top: 16px;
@@ -136,6 +137,15 @@ const Title = styled.p`
 const Subtitle = styled.p`
   ${props => props.theme.font_size.small};
   color: ${props => props.theme.color.black.light};
+`;
+
+const StyledExternalLink = styled(ExternalLink)`
+  color: inherit;
+  text-decoration: none;
+
+  &:hover {
+    color: ${props => props.theme.color.black.regular};
+  }
 `;
 
 export default Team;

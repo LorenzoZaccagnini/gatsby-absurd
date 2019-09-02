@@ -7,6 +7,15 @@ import ExternalLink from '@common/ExternalLink';
 
 const FAQS = [
   {
+    title: 'I want to try Devoleum!',
+    content: () => (
+      <>
+        You can try our simulation for free <ExternalLink href="https://simulation.devoleum.com/">
+        here</ExternalLink>, build your supply chain and please give us a feedback :)
+      </>
+    ),
+  },
+  {
     title: 'What tech does Devoleum use?',
     content: () => (
       <>
@@ -51,15 +60,6 @@ const FAQS = [
         No, we do not beg for money or scam other people,
         if you want to invest in Devoleum you are welcome, <ExternalLink href="https://lorenzozaccagnini360607.typeform.com/to/ie22gw">
           contact us</ExternalLink> and do not forget to link your investments portfolio.
-      </>
-    ),
-  },
-  {
-    title: 'I want to try Devoleum!',
-    content: () => (
-      <>
-        You can try our simulation for free <ExternalLink href="https://simulation.devoleum.com/">
-        here</ExternalLink>, build your supply chain and please give us a feedback :)
       </>
     ),
   },

@@ -41,7 +41,41 @@ const About = () => (
             }
           }
         }
+
+      art_scalability: file(
+        sourceInstanceName: { eq: "art" }
+        name: { eq: "scala" }
+      ) {
+        childImageSharp {
+          fluid(maxWidth: 760) {
+            ...GatsbyImageSharpFluid_withWebp_tracedSVG
+          }
+        }
       }
+
+    art_interoperability: file(
+      sourceInstanceName: { eq: "art" }
+      name: { eq: "inter" }
+    ) {
+      childImageSharp {
+        fluid(maxWidth: 760) {
+          ...GatsbyImageSharpFluid_withWebp_tracedSVG
+        }
+      }
+    }
+
+  art_correctness: file(
+    sourceInstanceName: { eq: "art" }
+    name: { eq: "correctness" }
+  ) {
+    childImageSharp {
+      fluid(maxWidth: 760) {
+        ...GatsbyImageSharpFluid_withWebp_tracedSVG
+      }
+    }
+  }
+
+}
     `}
     render={data => (
       <Section id="about">
@@ -79,7 +113,7 @@ const About = () => (
           </Grid>
           <Grid inverse>
             <Art>
-              <Img fluid={data.art_fast.childImageSharp.fluid} />
+              <Img fluid={data.art_correctness.childImageSharp.fluid} />
             </Art>
             <div>
               <h2>Correctness</h2>
@@ -96,21 +130,23 @@ const About = () => (
               <p>
                 Devoleum smart contracts can be triggered by events external to Ethereum blockchain, thanks to oracles.
           			IoT devices and Open Bank APIs can be used in combination with Devoleum to automize the supply chain workflow, saving time and money.
+
               </p>
             </div>
             <Art>
-              <Img fluid={data.art_fast.childImageSharp.fluid} />
+              <Img fluid={data.art_interoperability.childImageSharp.fluid} />
             </Art>
           </Grid>
           <Grid inverse>
             <Art>
-              <Img fluid={data.art_fast.childImageSharp.fluid} />
+              <Img fluid={data.art_scalability.childImageSharp.fluid} />
             </Art>
             <div>
               <h2>Scalability</h2>
               <p>
                 Devoleum smart contracts can be used in combination with IPFS and traditional databases,
             		allowing great scalability and lower costs.
+                
               </p>
             </div>
           </Grid>

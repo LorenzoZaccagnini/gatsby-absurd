@@ -12,8 +12,19 @@ const GlobalStyles = createGlobalStyle`
   @import "react-alice-carousel/lib/alice-carousel.css";
 
   .press_gallery {
-    width: 400px;
+    width: 90%;
+    max-width: 400px;
     margin: auto;
+    padding: 5px;
+  }
+
+  .dev_button {
+    max-width: 200px;
+    border: 1px solid black;
+    padding: 15px;
+    background: white;
+    font-size: 24px;
+    box-shadow: 2px 4px #888888;
   }
 
   body {
@@ -73,12 +84,14 @@ const GlobalStyles = createGlobalStyle`
   }
 
   .pcolor{
-    color: darkslategray;
+    color: black;
   }
 
   a {
     cursor: pointer;
   }
+
+  
 `;
 
 export default GlobalStyles;

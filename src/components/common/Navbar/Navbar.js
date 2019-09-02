@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import Scrollspy from 'react-scrollspy';
+import Img from 'gatsby-image';
 
 import { Container } from '@components/global';
 import {
@@ -14,8 +15,9 @@ import {
 } from './style';
 
 import { ReactComponent as MenuIcon } from '@static/icons/menu.svg';
+import Logo from '@static/logo.png';
 
-const NAV_ITEMS = ['About', 'Press', 'Team', 'FAQ'];
+const NAV_ITEMS = ['About', 'Press', 'Team', 'FAQ', 'Contact Us'];
 
 class Navbar extends Component {
   state = {
@@ -59,7 +61,11 @@ class Navbar extends Component {
     return (
       <Nav {...this.props}>
         <StyledContainer>
-          <Brand>Devoleum</Brand>
+
+          <Brand style={{ display: 'flex'}}>
+          <img src={Logo} alt="Devoleum logo" style={{ width: '45px', height: '45px', marginRight: '10px'}}/>
+            Devoleum
+          </Brand>
           <Mobile>
             <button onClick={this.toggleMobileMenu} style={{ color: 'black' }}>
               <MenuIcon />

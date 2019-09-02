@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { StaticQuery, graphql } from 'gatsby';
 import Img from 'gatsby-image';
+import ExternalLink from '@common/ExternalLink';
 
 import { Section, Container } from '@components/global';
 
@@ -11,7 +12,7 @@ const About = () => (
       query {
         art_solution: file(
           sourceInstanceName: { eq: "art" }
-          name: { eq: "fake" }
+          name: { eq: "solution" }
         ) {
           childImageSharp {
             fluid(maxWidth: 760) {
@@ -29,7 +30,10 @@ const About = () => (
               <h2>Our solution</h2>
               <p className="pcolor">
                 Devoleum tracks and stores every step of the food supply chain using Blockchain and AI,
-                allowing the final consumer to know easily the entire history of each product from the comfort of their smartphone
+                allowing the final consumer to know easily the entire history of each product from the comfort of their smartphone.
+                <StyledExternalLink href="https://simulation.devoleum.com/">
+                  {' '}Try the simulation here!
+                </StyledExternalLink>
               </p>
             </div>
             <Art>
@@ -85,6 +89,15 @@ const Art = styled.figure`
   margin: 0;
   max-width: 380px;
   width: 100%;
+`;
+
+const StyledExternalLink = styled(ExternalLink)`
+  color: inherit;
+  text-decoration: none;
+
+  &:hover {
+    color: ${props => props.theme.color.black.regular};
+  }
 `;
 
 export default About;

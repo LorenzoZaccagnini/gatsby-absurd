@@ -54,6 +54,9 @@ const Gallery = () => {
         </div>
           <br />
           <h2>{el.journal}</h2>
+            <StyledExternalLink href={el.source}>
+              <h4>Link to source</h4>
+          </StyledExternalLink>
         </div>
       )
     }
@@ -117,6 +120,15 @@ const Art = styled.figure`
 
   @media (max-width: ${props => props.theme.screen.md}) {
     display: none;
+  }
+`;
+
+const StyledExternalLink = styled(ExternalLink)`
+  color: inherit;
+  text-decoration: none;
+
+  &:hover {
+    color: ${props => props.theme.color.black.regular};
   }
 `;
 

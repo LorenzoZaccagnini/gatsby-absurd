@@ -12,6 +12,7 @@ import Footer from '@sections/Footer';
 import Gallery from '@sections/Gallery';
 import Problem from '@sections/Problem';
 import Solution from '@sections/Solution';
+import Contact from '@sections/Contact';
 
 const IndexPage = () => (
   <Layout>
@@ -23,6 +24,7 @@ const IndexPage = () => (
     <Brands />
     <Team />
     <Faq />
+    <Contact />
     <Footer />
   </Layout>
 );
