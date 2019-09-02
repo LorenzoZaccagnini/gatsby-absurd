@@ -16,6 +16,16 @@ const FAQS = [
     ),
   },
   {
+    title: 'How Devoleum integrates Smart Tags?',
+    content: () => (
+      <>
+        Take a look at <ExternalLink href="https://simulation.devoleum.com/"> this video
+        here</ExternalLink>, using different kinds of Oracles Devoleum can integrate even more
+        advanced smart tags.
+      </>
+    ),
+  },
+  {
     title: 'What tech does Devoleum use?',
     content: () => (
       <>
@@ -57,7 +67,7 @@ const FAQS = [
     title: 'Do you plan an ICO?',
     content: () => (
       <>
-        No, we do not beg for money or scam other people,
+        No, we do not beg for money,
         if you want to invest in Devoleum you are welcome, <ExternalLink href="https://lorenzozaccagnini360607.typeform.com/to/ie22gw">
           contact us</ExternalLink> and do not forget to link your investments portfolio.
       </>

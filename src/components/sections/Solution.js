@@ -29,8 +29,7 @@ const About = () => (
             <div>
               <h2>Our solution</h2>
               <p className="pcolor">
-                Devoleum tracks and stores every step of the food supply chain using Blockchain and AI,
-                allowing the final consumer to know easily the entire history of each product from the comfort of their smartphone.
+                Devoleum tracks and stores every step of the food supply chain using Blockchain and AI. The final consumers can easily check the entire history of a product from the comfort of their smartphone, using smart tags.
                 <StyledExternalLink href="https://simulation.devoleum.com/">
                   {' '}Try the simulation here!
                 </StyledExternalLink>
