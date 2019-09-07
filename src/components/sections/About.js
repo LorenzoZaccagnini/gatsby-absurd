@@ -129,7 +129,7 @@ const About = () => (
               <h2>Interoperability</h2>
               <p>
                 Devoleum smart contracts can be triggered by events external to Ethereum blockchain, thanks to oracles.
-          			IoT devices and Open Bank APIs can be used in combination with Devoleum to automize the supply chain workflow, saving time and money.
+          			IoT devices and Open Bank APIs can be used in combination with Devoleum to automatize the supply chain workflow, saving time and money.
 
               </p>
             </div>
@@ -146,7 +146,7 @@ const About = () => (
               <p>
                 Devoleum smart contracts can be used in combination with IPFS and traditional databases,
             		allowing great scalability and lower costs.
-                
+
               </p>
             </div>
           </Grid>
