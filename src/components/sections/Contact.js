@@ -26,7 +26,7 @@ const About = () => (
       <Section id="contact us" accent>
         <Container>
           <Grid>
-              <StyledExternalLink href="https://lorenzozaccagnini360607.typeform.com/to/ie22gw">
+              <StyledExternalLink href="https://forms.gle/aRhefQzphYL3Fbhi7">
                 <div className="dev_button">
                 CONTACT US
               </div>
