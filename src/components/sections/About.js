@@ -97,7 +97,7 @@ const About = () => (
             <div>
               <h2>Privacy</h2>
               <p>
-                Our integration of zk-SNARKs (Zokrates) allows the tokenization of a physical asset without revealing sensitive data on the blockchain.
+                Our integration of zero knowldge protocols allows the tokenization of a physical asset without revealing sensitive data on the blockchain.
             		We are using Federated Learning to train
                  our AI models in combination with zk-SNARKs.
                 <br />
