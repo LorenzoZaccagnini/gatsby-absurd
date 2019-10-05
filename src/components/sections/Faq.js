@@ -30,7 +30,7 @@ const FAQS = [
     content: () => (
       <>
         All the tech behind Devoleum is open source, Ethereum blockchain, Tensor Flow,
-        PySyft, Truffle, Zokrates, React, Electron etc...
+        PySyft, Truffle, React, Electron etc...
       </>
     ),
   },
@@ -57,8 +57,7 @@ const FAQS = [
     title: 'Do you have a white paper?',
     content: () => (
       <>
-      No, we are busy working on the real project and is in constant evolution,
-      we do not have time to waste on a fake paper, we suggest to read <ExternalLink href="https://medium.com/loom-network/loom-network-wheres-your-whitepaper-5c5c9075af72">
+      No, we are busy working on the real project and is in constant evolution, we suggest to read <ExternalLink href="https://medium.com/loom-network/loom-network-wheres-your-whitepaper-5c5c9075af72">
         this article</ExternalLink>
       </>
     ),
@@ -67,8 +66,7 @@ const FAQS = [
     title: 'Do you plan an ICO?',
     content: () => (
       <>
-        No, we do not beg for money,
-        if you want to invest in Devoleum you are welcome, <ExternalLink href="https://lorenzozaccagnini360607.typeform.com/to/ie22gw">
+        No, but if you are welcome to invest in Devoleum , <ExternalLink href="https://lorenzozaccagnini360607.typeform.com/to/ie22gw">
           contact us</ExternalLink> and do not forget to link your investments portfolio.
       </>
     ),
