@@ -2,7 +2,6 @@ import React from 'react';
 import styled from 'styled-components';
 import { StaticQuery, graphql } from 'gatsby';
 import Img from 'gatsby-image';
-import i18n from '../../pages/i18n';
 
 import { Container } from '@components/global';
 import ExternalLink from '@common/ExternalLink';
