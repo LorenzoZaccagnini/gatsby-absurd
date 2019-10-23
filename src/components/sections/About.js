@@ -98,7 +98,6 @@ const About = () => (
               <h2>Privacy</h2>
               <p>
                 Devoleum protects the privacy of the users in many ways. Our integration of Zero Knowledge protocols allows the tokenization of a physical asset without revealing sensitive data on the blockchain.
-            		Devoleum oracles architecture can integrate and welcome AI models that use Federated Learning, in order to preserve privacy and scalability.
                  Confidential documents can be inserted as a link inside our smart contracts, using an anonymous hash as a link, without uploading the sensitive files inside Ethereum blockchain.
                 <br />
                 <strong>Devoleum offers the possibility
@@ -118,9 +117,8 @@ const About = () => (
             <div>
               <h2>Correctness</h2>
               <p>
-                We are building AI models that will inspect data correctness before being pushed immutably inside Ethereum.
-            		Using AI we can provide accurate real time prediction with the blockchain tamper proof data. We are actively
-            		open to collaboration with companies that gather data using precision farming, feel free to contact us.
+                With Devoleum It's possilbe to combine oracles and AI models that will inspect data correctness before being pushed immutably inside Ethereum.
+            		Using AI we can provide accurate real time prediction with the blockchain tamper proof data. Devoleum oracles architecture can integrate and welcome AI models that use Federated Learning, in order to preserve privacy and scalability.
               </p>
             </div>
           </Grid>
