@@ -30,17 +30,7 @@ const FAQS = [
     content: () => (
       <>
         All the tech behind Devoleum is open source, Ethereum blockchain, Tensor Flow,
-        PySyft, Truffle, Zokrates, React, Electron etc...
-      </>
-    ),
-  },
-  {
-    title: 'Why Devoleum is not yet commercialized?',
-    content: () => (
-      <>
-        We are improving our AI models, we're searching
-        companies that uses precision farming in order to gather enough data
-        to develop accurate AI models.
+        PySyft, Truffle, React, Electron etc...
       </>
     ),
   },
