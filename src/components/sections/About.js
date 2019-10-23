@@ -89,7 +89,7 @@ const About = () => (
               <p>
                 Devoleum stores the supply chain steps in the Ethereum blockchain, a tamper proof system
 						    open and transparent. The data inside the blockchain becomes immutable, impossible to manipulate.
-                Every interaction with the data is recorded in public transactions. King Joffrey knows why transparency is important in food supply chains
+                Every interaction with the data is recorded in public transactions. King Joffrey knows why transparency is important especially in food supply chains
               </p>
             </div>
           </Grid>
@@ -97,9 +97,10 @@ const About = () => (
             <div>
               <h2>Privacy</h2>
               <p>
-                Our integration of zero knowldge protocols allows the tokenization of a physical asset without revealing sensitive data on the blockchain.
-            		We are using Federated Learning to train
-                 our AI models in combination with zk-SNARKs.
+                Devoleum protect the privacy of the users in many ways. Our integration of Zero Knowledge protocols allows the tokenization of a physical asset without revealing sensitive data on the blockchain.
+            		Devoleum oracles architecture is compatible with Federated Learning to train
+                 our AI models.
+                 Confidential documents can be inserted as a link inside our smart contracts, using an anonymous hash as a link, without uploading the sensitive files inside Ethereum blockchain.
                 <br />
                 <strong>Devoleum offers the possibility
                   to use a fully decentralized architecture
@@ -129,7 +130,10 @@ const About = () => (
               <h2>Interoperability</h2>
               <p>
                 Devoleum smart contracts can be triggered by events external to Ethereum blockchain, thanks to oracles.
-          			IoT devices and Open Bank APIs can be used in combination with Devoleum to automatize the supply chain workflow, saving time and money.
+                Devoleum's oracles allows the supply chain to communicate with the Ethereum blockchain,
+                creating interactive stories from different data sources, such as IoT (precision farming),
+                artificial intelligence models, building information modeling (BIM) and distribution services for
+                digital content (aggregators and streaming). 
 
               </p>
             </div>

@@ -6,13 +6,13 @@ import ExternalLink from '@common/ExternalLink';
 
 import { Section, Container } from '@components/global';
 
-const About = () => (
+const SolutionDetail = () => (
   <StaticQuery
     query={graphql`
       query {
-        art_solution: file(
+        art_branch: file(
           sourceInstanceName: { eq: "art" }
-          name: { eq: "solution" }
+          name: { eq: "branch" }
         ) {
           childImageSharp {
             fluid(maxWidth: 760) {
@@ -25,18 +25,23 @@ const About = () => (
     render={data => (
       <Section id="about" accent>
         <Container>
-          <Grid>
+          <Grid inverse>
+            <Art>
+              <Img fluid={data.art_branch.childImageSharp.fluid} />
+            </Art>
             <div align="left">
-              <h2>Our solution</h2>
+              <h2>Versatility</h2>
               <p className="pcolor">
-Using Devoleum a flow of data becomes a meaningful story, making it immutable on the blockchain, showing the digital or physical passages that have helped make the product unique and valuable. The story can be easily consulted on a storyboard in the Devoleum web platform, easily accessible from any device just by scanning a smart tag.                <StyledExternalLink href="https://collaborations.devoleum.com/">
-                  {' '}Check our collaborations!
-                </StyledExternalLink>
+                Devoleum offers a versatile platform that adapts to every supply chain.
+                It's possible to trace the history of an agri-food product, from land monitoring data to sale.
+                In the field of construction (AEC), you can track the first project phases, the construction and maintenance.
+                Digital creatives can use Devoleum for a song or other
+                digital artworks, in order to protect their intellectual rights and assure a fair distribution
+                of earnings. Devoleum highlights the work of people and the value
+                they add to the product in the belief that a sustainable supply chain that respects everyone creates better products.
               </p>
             </div>
-            <Art>
-              <Img fluid={data.art_solution.childImageSharp.fluid} />
-            </Art>
+
           </Grid>
         </Container>
       </Section>
@@ -46,7 +51,7 @@ Using Devoleum a flow of data becomes a meaningful story, making it immutable on
 
 const Grid = styled.div`
   display: grid;
-  grid-template-columns: 3fr 2fr;
+  grid-template-columns: 2fr 3fr;
   grid-gap: 40px;
   text-align: right;
   align-items: center;
@@ -98,4 +103,4 @@ const StyledExternalLink = styled(ExternalLink)`
   }
 `;
 
-export default About;
+export default SolutionDetail;

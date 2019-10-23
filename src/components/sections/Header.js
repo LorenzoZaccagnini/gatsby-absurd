@@ -2,9 +2,12 @@ import React from 'react';
 import styled from 'styled-components';
 import { StaticQuery, graphql } from 'gatsby';
 import Img from 'gatsby-image';
+import i18n from '../../pages/i18n';
 
 import { Container } from '@components/global';
 import ExternalLink from '@common/ExternalLink';
+
+
 
 const Header = () => (
   <StaticQuery
@@ -38,12 +41,14 @@ const Header = () => (
                 products
               </h1>
               <br />
+
               <p>
-                <StyledExternalLink href="https://simulation.devoleum.com/">
-                  Devoleum simulation &nbsp;&#x2794;
+                <StyledExternalLink href="https://collaborations.devoleum.com/">
+                  Devoleum collaborations &nbsp;&#x2794;
                 </StyledExternalLink>
               </p>
             </Text>
+
           </Grid>
         </Container>
       </HeaderWrapper>
