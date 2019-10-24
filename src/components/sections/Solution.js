@@ -29,7 +29,7 @@ const About = () => (
             <div align="left">
               <h2>Our solution</h2>
               <p className="pcolor">
-Using Devoleum a flow of data becomes a meaningful story, making it immutable on the blockchain, showing the digital or physical passages that have helped make the product unique and valuable. The story can be easily consulted on a storyboard in the Devoleum web platform, easily accessible from any device just by scanning a smart tag.                <StyledExternalLink href="https://collaborations.devoleum.com/">
+When using Devoleum a flow of data becomes a meaningful story, making it immutable on the blockchain, showing the digital or physical passages that have helped make the product unique and valuable. The story can be easily consulted on a storyboard in the Devoleum web platform, easily accessible from any device just by scanning a smart tag.                <StyledExternalLink href="https://collaborations.devoleum.com/">
                   {' '}Check our collaborations!
                 </StyledExternalLink>
               </p>
