@@ -37,8 +37,7 @@ const SolutionDetail = () => (
                 In the field of construction (AEC), you can track the first project phases, the construction and maintenance.
                 Digital creatives can use Devoleum for a song or other
                 digital artworks, in order to protect their intellectual rights and assure a fair distribution
-                of earnings. Devoleum highlights the work of people and the value
-                they add to the product in the belief that a sustainable supply chain that respects everyone creates better products.
+                of earnings. Devoleum promotes sustainable supply chains, ensuring that the work of everyone will be credited, believing that fair supply chains make awesome products.
               </p>
             </div>
 
