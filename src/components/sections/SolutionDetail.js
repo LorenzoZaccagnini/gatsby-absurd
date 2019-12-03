@@ -34,7 +34,7 @@ const SolutionDetail = () => (
               <p className="pcolor">
                 Devoleum offers a versatile platform that adapts to every supply chain.
                 It's possible to trace the history of an agri-food product, from land monitoring data to sale.
-                In the field of construction (AEC), you can track the first project phases, the construction and maintenance.
+                In the field of construction (AEC), you can track the first project phases, construction and maintenance.
                 Digital creatives can use Devoleum for a song or other
                 digital artworks, in order to protect their intellectual rights and assure a fair distribution
                 of earnings. Devoleum promotes sustainable supply chains, ensuring that the work of everyone will be credited, believing that fair supply chains make awesome products.
