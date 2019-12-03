@@ -117,8 +117,8 @@ const About = () => (
             <div>
               <h2>Correctness</h2>
               <p>
-                With Devoleum It's possilbe to combine oracles and AI models that will inspect data correctness before being pushed immutably inside Ethereum.
-            		Using AI we can provide accurate real time prediction with the blockchain tamper proof data. Devoleum oracles architecture can integrate and welcome AI models that use Federated Learning, in order to preserve privacy and scalability.
+                With Devoleum It's possible to combine oracles and AI models that will inspect data correctness before being pushed immutably inside Ethereum.
+            		Using AI we can provide accurate real-time prediction with the blockchain tamper-proof data. Devoleum oracles architecture can integrate and welcome AI models that use Federated Learning, in order to preserve privacy and scalability.
               </p>
             </div>
           </Grid>
@@ -127,7 +127,7 @@ const About = () => (
               <h2>Interoperability</h2>
               <p>
                 Devoleum smart contracts can be triggered by events external to Ethereum blockchain, thanks to oracles.
-                Devoleum's oracles allows the supply chain to communicate with the Ethereum blockchain,
+                Devoleum's oracles allow the supply chain to communicate with the Ethereum blockchain,
                 creating interactive stories from different data sources, such as IoT (precision farming),
                 artificial intelligence models, building information modeling (BIM) and distribution services for
                 digital content (aggregators and streaming).
